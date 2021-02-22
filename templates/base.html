@@ -1,0 +1,20 @@
+<!--The base template will contain all main references to our external files and third-party libraries,
+for JavaScript and CSS, that we'll use across the entire application.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+</head>
+<!--The point of a base template is so you don't have to repeat yourself, which is a philophy
+within framework development such as Flask and Django.
+-->
+<body>
+
+    <h1>I'm part of the base template!</h1>
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>
