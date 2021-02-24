@@ -43,6 +43,7 @@ mongo = PyMongo(app)
 # This will find all documents from the tasks collection, and assign them to our new 'tasks' variable.
 # Along with the rendering of the template, we'll pass that tasks variable through to the template: tasks=tasks.
 # The first 'tasks' is what the template will use, and that's equal to the second 'tasks', which is our variable defined above.
+# df gt tsks below, this is the url_for the Python function we created that will render the main page, base.html.
 def get_tasks():
     tasks = mongo.db.tasks.find()
     return render_template("tasks.html", tasks=tasks)
